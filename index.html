@@ -21,14 +21,35 @@
             font-weight: 300;
         }
 
+        h2,
         h3,
         h5 {
             font-weight: bold;
             margin-bottom: 0;
         }
 
+        h3 {
+            color: #fff;
+            background-color: #000;
+            padding: 10px 20px;
+            margin-bottom: 15px;
+        }
+
         .card-header {
             font-weight: bold;
+        }
+
+        .accordion-button.collapsed {
+            color: #a6a6a6;
+        }
+        .accordion-button:not(.collapsed) {
+            background-color: rgb(248, 249, 250);
+            color: #000;
+        }
+
+        .accordion-item:has(.accordion-button:not(.collapsed)){}
+        .accordion-body {
+            background-color: rgb(248, 249, 250);
         }
     </style>
 </head>
@@ -82,8 +103,8 @@
             <section>
                 <h1 class="mt-5 mb-4 fw-bold">AVALIAÇÃO POSTUROLOGÍA</h1>
                 <div class="my-3">
-                    <a class="fw-bold" href="#imagenes"><button type="button" class="btn btn-info">Imagenes</button></a>
-                    <a class="fw-bold" href="#evaluaciones"><button type="button" class="btn btn-info">Evaluaciones</button></a>
+                    <a class="fw-bold" href="#imagenes"><button type="button" class="btn btn-dark">Imagenes</button></a>
+                    <a class="fw-bold" href="#evaluaciones"><button type="button" class="btn btn-dark">Evaluaciones</button></a>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="text" name="date" id="date" class="form-control" placeholder="Data">
@@ -124,37 +145,41 @@
                     <input type="text" name="indication" id="indication" class="form-control" placeholder="Indicaçao">
                     <label for="indication">Indicaçao</label>
                 </div>
-                <div class="my-5">
+            </section>
+
+            <section id="imagenes" class="pt-5">
+                <h3>IMAGENES</h3>
+                <div class="mt-3">
                     <label for="formFile" class="form-label"><i class="fa-solid fa-image"></i> Agregar imagenes</label>
                     <input class="form-control" type="file" id="formFile">
                 </div>
-                <div class="row my-5" id="imagenes">
+                <div class="row my-5">
                     <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_1.jpeg" alt="" style="width: 100%;"></div>
                     <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_2.jpeg" alt="" style="width: 100%;"></div>
                     <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_1.jpeg" alt="" style="width: 100%;"></div>
                     <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_2.jpeg" alt="" style="width: 100%;"></div>
                     <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_1.jpeg" alt="" style="width: 100%;"></div>
                 </div>
-                <div id="evaluaciones">
-
-                    <h3 class="mt-5">evoluciones</h3>
-                    <table style="width: 100%;" class="table">
-                        <tr>
-                            <th>Fecha</th>
-                            <th>Descripcion</th>
-                        </tr>
-                        <tr>
-                            <td>12/12/1212</td>
-                            <td>Vino hoy y se quejo</td>
-                        </tr>
-                        <tr>
-                            <td>12/12/1212</td>
-                            <td>Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo </td>
-                        </tr>
-                    </table>
-                </div>
-
             </section>
+
+                <section id="evaluaciones" class="pt-5"></section>
+                <h3>EVOLUCIONES</h3>
+                <table style="width: 100%;" class="table">
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Descripcion</th>
+                    </tr>
+                    <tr>
+                        <td>12/12/1212</td>
+                        <td>Vino hoy y se quejo</td>
+                    </tr>
+                    <tr>
+                        <td>12/12/1212</td>
+                        <td>Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo </td>
+                    </tr>
+                </table>
+            </section>
+
 
             <section>
                 <h3 class="mt-5">AVALIAÇÃO CLINICA</h3>
@@ -162,44 +187,55 @@
                     <textarea class="form-control" name="complaint" id="complaint" placeholder="Queixa principal"></textarea>
                     <label for="complaint">Queixa principal</label>
                 </div>
-                <div class="form-floating mb-3">
+                <div class="form-floating">
                     <textarea class="form-control" name="clinic_history" id="clinic_history" placeholder="História clinica"></textarea>
                     <label for="clinic_history">História clinica</label>
                 </div>
             </section>
 
 
-            <section class="py-5 my-5">
+            <section class="my-5">
                 <h3>TESTE DE INHIBIÇÃO</h3>
-                <div class="accordion" id="accordionItems">
+                <ul class="list-group mt-3">
+                    <li class="list-group-item py-3">
+                        <div class="d-flex align-items-center justify-content-start" style="gap:25px">
+                            <h5>VISCERAS</h5>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="visceras" id="viscerasNao" checked role="button">
+                                <label class="form-check-label" for="viscerasNao" role="button">No</label>
+                            </div>
+                            <div class="form-check" role="button">
+                                <input class="form-check-input" type="radio" name="visceras" id="viscerasSim" role="button">
+                                <label class="form-check-label" for="viscerasSim" role="button">Si</label>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+
+
+                <div class="accordion mt-3">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-obstaculos">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-obstaculos" aria-expanded="false" aria-controls="collapse-obstaculos">
-                                OBSTACULOS
+                                <h5>OBSTACULOS</h5>
                             </button>
                         </h2>
                         <div id="collapse-obstaculos" class="accordion-collapse collapse" aria-labelledby="flush-obstaculos">
                             <div class="accordion-body">
-                                <div class="row justify-content-around align-items-center">
-                                    <div class="col-12">
-                                        <h5 class="my-3">CICATRIZ PEDAGÓGICA</h5>
+                                <div class="d-flex align-items-center justify-content-start mt-3" style="gap:25px">
+                                    <h5>CICATRIZ PEDAGÓGICA</h5>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="radio" name="cicatriz" value="0" id="cacatrizSim" checked="true" role="button">
+                                        <label class="form-check-label" for="cacatrizSim" role="button">No</label>
                                     </div>
-                                    <div class="col-2">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="scar" id="checkNao" checked role="button">
-                                            <label class="form-check-label" for="checkNao" role="button">No</label>
-                                        </div>
-                                        <div class="form-check" role="button">
-                                            <input class="form-check-input" type="radio" name="scar" id="checkSim" role="button">
-                                            <label class="form-check-label" for="checkSim" role="button">Si</label>
-                                        </div>
+                                    <div class="form-check" role="button">
+                                        <input class="form-check-input" type="radio" name="cicatriz" value="1" id="cacatrizNao" role="button">
+                                        <label class="form-check-label" for="cacatrizNao" role="button">Si</label>
                                     </div>
-                                    <div class="col-10">
-                                        <div class="form-floating">
-                                            <input type="text" name="scar_place" id="scar_place" class="form-control" placeholder="Local">
-                                            <label for="scar_place">Local</label>
-                                        </div>
-                                    </div>
+                                </div>
+                                <div class="form-floating" id="text_cicatriz_local" style="display: none;">
+                                    <input type="text" name="cicatriz_local" id="cicatriz_local" class="form-control" placeholder="Local">
+                                    <label for="cicatriz_local">Local</label>
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
@@ -213,21 +249,21 @@
 
                                                     <div class="col-12">
                                                         <label for="lombar_extensao" class="card-subtitle">Extensão</label>
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_extensao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_extensao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-12">
                                                         <label for="lombar_flexao" class="card-subtitle">Flexão</label>
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                         <hr>
                                                     </div>
                                                     <div class="col-12">
                                                         <label for="lombar_flexao" class="card-subtitle">Lateralidade</label>
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
 
                                                 </div>
@@ -238,10 +274,10 @@
                                                         <label for="lombar_flexao" class="card-subtitle">Rotacão</label>
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                 </div>
                                             </div>
@@ -255,20 +291,20 @@
 
                                                     <div class="col-12">
                                                         <label for="lombar_extensao" class="card-subtitle">Extensão</label>
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_extensao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_extensao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-12">
                                                         <label for="lombar_flexao" class="card-subtitle">Flexão</label>
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-12">
                                                         <label for="lombar_flexao" class="card-subtitle">Lateralidade</label>
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -276,10 +312,10 @@
                                                         <label for="lombar_flexao" class="card-subtitle">Rotacão</label>
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                 </div>
                                             </div>
@@ -293,20 +329,20 @@
 
                                                     <div class="col-12">
                                                         <label for="lombar_extensao" class="card-subtitle">Extensão</label>
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_extensao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_extensao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-12">
                                                         <label for="lombar_flexao" class="card-subtitle">Flexão</label>
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-12">
                                                         <label for="lombar_flexao" class="card-subtitle">Lateralidade</label>
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -314,10 +350,10 @@
                                                         <label for="lombar_flexao" class="card-subtitle">Rotacão</label>
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                     <div class="col-6">
-                                                        <input type="range" class="form-range" min="1" max="3" name="lombar_flexao" id="lombar_extensao">
+                                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
                                                     </div>
                                                 </div>
                                             </div>
@@ -327,38 +363,20 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="flush-visceras">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-visceras" aria-expanded="false" aria-controls="collapse-visceras">
-                                VISCERAS
-                            </button>
-                        </h2>
-                        <div id="collapse-visceras" class="accordion-collapse collapse show" aria-labelledby="flush-visceras">
-                            <div class="accordion-body">
-                                <div class="form-check">
-                                    <input class="form-check-input" type="radio" name="visceras" id="viscerasNao" checked role="button">
-                                    <label class="form-check-label" for="viscerasNao" role="button">No</label>
-                                </div>
-                                <div class="form-check" role="button">
-                                    <input class="form-check-input" type="radio" name="visceras" id="viscerasSim" role="button">
-                                    <label class="form-check-label" for="viscerasSim" role="button">Si</label>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
+                <div class="accordion mt-3">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-entrada-podal">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-entrada-podal" aria-expanded="false" aria-controls="collapse-entrada-podal">
-                                ENTRADA PODAL
+                                <h5>ENTRADA PODAL</h5>
                             </button>
                         </h2>
                         <div id="collapse-entrada-podal" class="accordion-collapse collapse" aria-labelledby="flush-entrada-podal">
                             <div class="accordion-body">
                                 <div class="row">
                                     <div class="col-12 mb-3">
-                                        <h5>Pés</h5>
+                                        <h6>Pés</h6>
                                     </div>
                                     <div class="col-6 col-md-3 mb-3">
                                         <div class="card">
@@ -463,7 +481,7 @@
                                 </div>
                                 <div class="row mt-3">
                                     <div class="col-12 col-md-6 mb-3">
-                                        <h5>Asimétricos</h5>
+                                        <h6>Asimétricos</h6>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
                                             <label class="form-check-label" for="plano_escapular_normal" role="button">
@@ -484,7 +502,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 col-md-6">
-                                        <h5>Desarmónicos</h5>
+                                        <h6>Desarmónicos</h6>
                                         <div class="form-floating mb-3">
                                             <textarea class="form-control" name="complaint" id="complaint" placeholder="Queixa principal"></textarea>
                                             <label for="complaint">Desarmónicos</label>
@@ -493,7 +511,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12">
-                                        <h5>Impressao plantar (podoscopia)</h5>
+                                        <h6>Impressao plantar (podoscopia)</h6>
                                     </div>
                                     <div class="col-12 col-md-3 mb-3">
                                         <div class="card">
@@ -534,15 +552,33 @@
                                         </div>
                                     </div>
                                 </div>
-
+                                <div class="row">
+                                    <div class="col-12">
+                                        <h6>Dinámica</h6>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" name="complaint" id="complaint" placeholder="Queixa principal"></textarea>
+                                            <label for="complaint">Marcha</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" name="complaint" id="complaint" placeholder="Queixa principal"></textarea>
+                                            <label for="complaint">Observaciones</label>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="accordion mt-3">
 
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-entrada-ocular">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-entrada-ocular" aria-expanded="false" aria-controls="collapse-entrada-ocular">
-                                ENTRADA OCULAR
+                                <h5>ENTRADA OCULAR</h5>
                             </button>
                         </h2>
                         <div id="collapse-entrada-ocular" class="accordion-collapse collapse" aria-labelledby="flush-entrada-ocular">
@@ -551,11 +587,13 @@
                             </div>
                         </div>
                     </div>
+                </div>
 
+                <div class="accordion mt-3">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="flush-entrada-dento">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-entrada-dento" aria-expanded="false" aria-controls="collapse-entrada-dento">
-                                ENTRADA DENTO-OCLUSAL
+                                <h5>ENTRADA DENTO-OCLUSAL</h5>
                             </button>
                         </h2>
                         <div id="collapse-entrada-dento" class="accordion-collapse collapse" aria-labelledby="flush-entrada-dento">
@@ -566,7 +604,7 @@
                                 </div>
                                 <div class="row">
                                     <div class="col-12 mb-3">
-                                        <h5 for="apertoDentario">Aperto dentario</h5>
+                                        <h6 for="apertoDentario">Aperto dentario</h6>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="aperto_dentario" id="apertoDentarioNao" checked role="button">
                                             <label class="form-check-label" for="apertoDentarioNao" role="button">No</label>
@@ -577,7 +615,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <h5 for="apertoDentario">Range Dentes</h5>
+                                        <h6 for="apertoDentario">Range Dentes</h6>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="range_dentes" id="rangeDentesNao" checked role="button">
                                             <label class="form-check-label" for="rangeDentesNao" role="button">No</label>
@@ -588,7 +626,7 @@
                                         </div>
                                     </div>
                                     <div class="col-12 mb-3">
-                                        <h5 for="apertoDentario">Faz uso de placa</h5>
+                                        <h6 for="apertoDentario">Faz uso de placa</h6>
                                         <div class="form-check">
                                             <input class="form-check-input" type="radio" name="dentario_placas" id="dentarioPlacasNao" checked role="button">
                                             <label class="form-check-label" for="dentarioPlacasNao" role="button">No</label>
@@ -605,372 +643,367 @@
                     </div>
 
                 </div>
-            </section>
-
-
-            <section>
-                <div class="row">
-                    <div class="col-12 mt-5 mb-3">
-                        <div class="accordion" id="accordionPostural">
-                            <div class="accordion-item p-5">
-                                <h2 class="accordion-header" id="flush-avaliacao-postural">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-avaliacao-postural" aria-expanded="false" aria-controls="collapse-avaliacao-postural">
-                                        <h3>AVALIAÇÃO POSTURAL (reavaliar com elementos)</h3>
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse-avaliacao-postural" class="accordion-collapse collapse" aria-labelledby="flush-avaliacao-postural">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Plano Escapular</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
-                                                        <label class="form-check-label" for="plano_escapular_normal" role="button">
-                                                            Normal
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_anterior" role="button">
-                                                        <label class="form-check-label" for="plano_escapular_anterior" role="button">
-                                                            Anterior
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_posterior" role="button">
-                                                        <label class="form-check-label" for="plano_escapular_posterior" role="button">
-                                                            Posterior
-                                                        </label>
-                                                    </div>
+                <div class="accordion mt-3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-avaliacao-postural">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-avaliacao-postural" aria-expanded="false" aria-controls="collapse-avaliacao-postural">
+                                <h5>AVALIAÇÃO POSTURAL (reavaliar com elementos)</h5>
+                            </button>
+                        </h2>
+                        <div id="collapse-avaliacao-postural" class="accordion-collapse collapse" aria-labelledby="flush-avaliacao-postural">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Plano Escapular</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
+                                                    <label class="form-check-label" for="plano_escapular_normal" role="button">
+                                                        Normal
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_anterior" role="button">
+                                                    <label class="form-check-label" for="plano_escapular_anterior" role="button">
+                                                        Anterior
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_posterior" role="button">
+                                                    <label class="form-check-label" for="plano_escapular_posterior" role="button">
+                                                        Posterior
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Ombro baixo</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
-                                                        <label class="form-check-label" for="plano_escapular_normal" role="button">Normal</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_anterior" role="button">
-                                                        <label class="form-check-label" for="plano_escapular_anterior" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_posterior" role="button">
-                                                        <label class="form-check-label" for="plano_escapular_posterior" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Ombro Anterior</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
-                                                        <label class="form-check-label" for="plano_escapular_normal" role="button">
-                                                            Normal
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_anterior" role="button">
-                                                        <label class="form-check-label" for="plano_escapular_anterior" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_posterior" role="button">
-                                                        <label class="form-check-label" for="plano_escapular_posterior" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Pelve baixa</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
-                                                        <label class="form-check-label" for="plano_escapular_normal" role="button">
-                                                            Normal
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_anterior" role="button">
-                                                        <label class="form-check-label" for="plano_escapular_anterior" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_posterior" role="button">
-                                                        <label class="form-check-label" for="plano_escapular_posterior" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Ilíaco anterior</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
-                                                        <label class="form-check-label" for="plano_escapular_normal" role="button">
-                                                            Normal
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_anterior" role="button">
-                                                        <label class="form-check-label" for="plano_escapular_anterior" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_posterior" role="button">
-                                                        <label class="form-check-label" for="plano_escapular_posterior" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Perna curta</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
-                                                        <label class="form-check-label" for="perna_curta_direita" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
-                                                        <label class="form-check-label" for="perna_curta_esquerda" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                    
                                     </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Ombro baixo</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
+                                                    <label class="form-check-label" for="plano_escapular_normal" role="button">Normal</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_anterior" role="button">
+                                                    <label class="form-check-label" for="plano_escapular_anterior" role="button">
+                                                        Direita
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_posterior" role="button">
+                                                    <label class="form-check-label" for="plano_escapular_posterior" role="button">
+                                                        Esquerda
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Ombro Anterior</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
+                                                    <label class="form-check-label" for="plano_escapular_normal" role="button">
+                                                        Normal
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_anterior" role="button">
+                                                    <label class="form-check-label" for="plano_escapular_anterior" role="button">
+                                                        Direita
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_posterior" role="button">
+                                                    <label class="form-check-label" for="plano_escapular_posterior" role="button">
+                                                        Esquerda
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Pelve baixa</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
+                                                    <label class="form-check-label" for="plano_escapular_normal" role="button">
+                                                        Normal
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_anterior" role="button">
+                                                    <label class="form-check-label" for="plano_escapular_anterior" role="button">
+                                                        Direita
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_posterior" role="button">
+                                                    <label class="form-check-label" for="plano_escapular_posterior" role="button">
+                                                        Esquerda
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Ilíaco anterior</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_normal" checked role="button">
+                                                    <label class="form-check-label" for="plano_escapular_normal" role="button">
+                                                        Normal
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_anterior" role="button">
+                                                    <label class="form-check-label" for="plano_escapular_anterior" role="button">
+                                                        Direita
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="plano_escapular" id="plano_escapular_posterior" role="button">
+                                                    <label class="form-check-label" for="plano_escapular_posterior" role="button">
+                                                        Esquerda
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Perna curta</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
+                                                    <label class="form-check-label" for="perna_curta_direita" role="button">
+                                                        Direita
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
+                                                    <label class="form-check-label" for="perna_curta_esquerda" role="button">
+                                                        Esquerda
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
                                 </div>
                             </div>
-                            <div class="accordion-item">
-                                <h2 class="accordion-header" id="flush-testes-associados">
-                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-testes-associados" aria-expanded="false" aria-controls="collapse-testes-associados">
-                                        <h3>TESTES ASSOCIADOS (re-testar com elementos)</h3>
-                                    </button>
-                                </h2>
-                            </div>
-                            <div id="collapse-testes-associados" class="accordion-collapse collapse" aria-labelledby="flush-testes-associados">
-                                <div class="accordion-body">
-                                    <div class="row">
-                                        <div class="col-12 mt-3">
-                                            <h5 class="mt-3">Teste Posturodinâmico</h5>
-                                        </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Lombar</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
-                                                        <label class="form-check-label" for="perna_curta_direita" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
-                                                        <label class="form-check-label" for="perna_curta_esquerda" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                    </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion mt-3">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-testes-associados">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-testes-associados" aria-expanded="false" aria-controls="collapse-testes-associados">
+                                <h5>TESTES ASSOCIADOS (re-testar com elementos)</h5>
+                            </button>
+                        </h2>
+                        <div id="collapse-testes-associados" class="accordion-collapse collapse" aria-labelledby="flush-testes-associados">
+                            <div class="accordion-body">
+                                <div class="row">
+                                    <div class="col-12 mt-3">
+                                        <h6 class="mt-3">Teste Posturodinâmico</h6>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Lombar</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
+                                                    <label class="form-check-label" for="perna_curta_direita" role="button">
+                                                        Direita
+                                                    </label>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Torácica</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
-                                                        <label class="form-check-label" for="perna_curta_direita" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
-                                                        <label class="form-check-label" for="perna_curta_esquerda" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Cervical</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
-                                                        <label class="form-check-label" for="perna_curta_direita" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
-                                                        <label class="form-check-label" for="perna_curta_esquerda" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                    </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
+                                                    <label class="form-check-label" for="perna_curta_esquerda" role="button">
+                                                        Esquerda
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12 mt-5">
-                                            <h5 class="mt-3">Polegar ascendente:</h5>
-                                        </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">L5/S1</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
-                                                        <label class="form-check-label" for="perna_curta_direita" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
-                                                        <label class="form-check-label" for="perna_curta_esquerda" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                        <div class="form-floating">
-                                                            <input type="text" name="entrada_ocular_text" id="entrada_ocular_text" class="form-control" placeholder="Local">
-                                                            <label for="entrada_ocular_text">L5/S1</label>
-                                                        </div>
-                                                    </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Torácica</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
+                                                    <label class="form-check-label" for="perna_curta_direita" role="button">
+                                                        Direita
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
+                                                    <label class="form-check-label" for="perna_curta_esquerda" role="button">
+                                                        Esquerda
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">T12/L1</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
-                                                        <label class="form-check-label" for="perna_curta_direita" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
-                                                        <label class="form-check-label" for="perna_curta_esquerda" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                        <div class="form-floating">
-                                                            <input type="text" name="entrada_ocular_text" id="entrada_ocular_text" class="form-control" placeholder="Local">
-                                                            <label for="entrada_ocular_text">T12/L1</label>
-                                                        </div>
-                                                    </div>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Cervical</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
+                                                    <label class="form-check-label" for="perna_curta_direita" role="button">
+                                                        Direita
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
+                                                    <label class="form-check-label" for="perna_curta_esquerda" role="button">
+                                                        Esquerda
+                                                    </label>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="col-12 col-md-4 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">C7/T1</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
-                                                        <label class="form-check-label" for="perna_curta_direita" role="button">
-                                                            Direita
-                                                        </label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
-                                                        <label class="form-check-label" for="perna_curta_esquerda" role="button">
-                                                            Esquerda
-                                                        </label>
-                                                    </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mt-5">
+                                        <h6 class="mt-3">Polegar ascendente:</h6>
+                                    </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">L5/S1</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
+                                                    <label class="form-check-label" for="perna_curta_direita" role="button">
+                                                        Direita
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
+                                                    <label class="form-check-label" for="perna_curta_esquerda" role="button">
+                                                        Esquerda
+                                                    </label>
                                                     <div class="form-floating">
                                                         <input type="text" name="entrada_ocular_text" id="entrada_ocular_text" class="form-control" placeholder="Local">
-                                                        <label for="entrada_ocular_text">C7/T1</label>
+                                                        <label for="entrada_ocular_text">L5/S1</label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12 mt-5">
-                                            <h5 class="mt-3">Rotação da Cabeça:</h5>
-                                        </div>
-                                        <div class="col-12 col-md-6 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Esquerda</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="scar" id="checkNao" checked role="button">
-                                                        <label class="form-check-label" for="checkNao" role="button">Pouca</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="scar" id="checkNao" checked role="button">
-                                                        <label class="form-check-label" for="checkNao" role="button">Moderada</label>
-                                                    </div>
-                                                    <div class="form-check" role="button">
-                                                        <input class="form-check-input" type="radio" name="scar" id="checkSim" role="button">
-                                                        <label class="form-check-label" for="checkSim" role="button">Normal</label>
-                                                    </div>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">T12/L1</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
+                                                    <label class="form-check-label" for="perna_curta_direita" role="button">
+                                                        Direita
+                                                    </label>
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-12 col-md-6 mb-3">
-                                            <div class="card">
-                                                <div class="card-header bg-dark text-white">Direita</div>
-                                                <div class="card-body">
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="scar" id="checkNao" checked role="button">
-                                                        <label class="form-check-label" for="checkNao" role="button">Pouca</label>
-                                                    </div>
-                                                    <div class="form-check">
-                                                        <input class="form-check-input" type="radio" name="scar" id="checkNao" checked role="button">
-                                                        <label class="form-check-label" for="checkNao" role="button">Moderada</label>
-                                                    </div>
-                                                    <div class="form-check" role="button">
-                                                        <input class="form-check-input" type="radio" name="scar" id="checkSim" role="button">
-                                                        <label class="form-check-label" for="checkSim" role="button">Normal</label>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
+                                                    <label class="form-check-label" for="perna_curta_esquerda" role="button">
+                                                        Esquerda
+                                                    </label>
+                                                    <div class="form-floating">
+                                                        <input type="text" name="entrada_ocular_text" id="entrada_ocular_text" class="form-control" placeholder="Local">
+                                                        <label for="entrada_ocular_text">T12/L1</label>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-12 mt-3">
-                                            <h5 class="mt-3">Cinesiologia aplicada:</h5>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-floating mb-3">
-                                                <textarea class="form-control" name="complaint" id="complaint" placeholder="Músculo testado"></textarea>
-                                                <label for="complaint">Músculo testado</label>
+                                    <div class="col-12 col-md-4 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">C7/T1</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_direita" id="perna_curta_direita" role="button">
+                                                    <label class="form-check-label" for="perna_curta_direita" role="button">
+                                                        Direita
+                                                    </label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox" name="perna_curta_esquerda" id="perna_curta_esquerda" role="button">
+                                                    <label class="form-check-label" for="perna_curta_esquerda" role="button">
+                                                        Esquerda
+                                                    </label>
+                                                </div>
+                                                <div class="form-floating">
+                                                    <input type="text" name="entrada_ocular_text" id="entrada_ocular_text" class="form-control" placeholder="Local">
+                                                    <label for="entrada_ocular_text">C7/T1</label>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-12">
-                                            <div class="form-floating mb-3">
-                                                <textarea class="form-control" name="complaint" id="complaint" placeholder="Romberg postural"></textarea>
-                                                <label for="complaint">Romberg postural</label>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mt-5">
+                                        <h6 class="mt-3">Rotação da Cabeça:</h6>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Esquerda</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="scar" id="checkNao" checked role="button">
+                                                    <label class="form-check-label" for="checkNao" role="button">Pouca</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="scar" id="checkNao" checked role="button">
+                                                    <label class="form-check-label" for="checkNao" role="button">Moderada</label>
+                                                </div>
+                                                <div class="form-check" role="button">
+                                                    <input class="form-check-input" type="radio" name="scar" id="checkSim" role="button">
+                                                    <label class="form-check-label" for="checkSim" role="button">Normal</label>
+                                                </div>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 mb-3">
+                                        <div class="card">
+                                            <div class="card-header bg-dark text-white">Direita</div>
+                                            <div class="card-body">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="scar" id="checkNao" checked role="button">
+                                                    <label class="form-check-label" for="checkNao" role="button">Pouca</label>
+                                                </div>
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="scar" id="checkNao" checked role="button">
+                                                    <label class="form-check-label" for="checkNao" role="button">Moderada</label>
+                                                </div>
+                                                <div class="form-check" role="button">
+                                                    <input class="form-check-input" type="radio" name="scar" id="checkSim" role="button">
+                                                    <label class="form-check-label" for="checkSim" role="button">Normal</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 mt-3">
+                                        <h6 class="mt-3">Cinesiologia aplicada:</h6>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" name="complaint" id="complaint" placeholder="Músculo testado"></textarea>
+                                            <label for="complaint">Músculo testado</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-floating mb-3">
+                                            <textarea class="form-control" name="complaint" id="complaint" placeholder="Romberg postural"></textarea>
+                                            <label for="complaint">Romberg postural</label>
                                         </div>
                                     </div>
                                 </div>
@@ -978,8 +1011,6 @@
                         </div>
                     </div>
                 </div>
-
-                
             </section>
         </form>
     </div>
@@ -1029,6 +1060,13 @@
             $('#age').focus()
             return age;
         }
+        $("input[name='cicatriz']").on('change', function (e) {
+            if (e.target.value == 1) {
+                $('#text_cicatriz_local').toggle(300);
+            } else {
+                $('#text_cicatriz_local').toggle(300);
+            }
+        });
 
         // $('#flush-visceras').click(function(ev){
         //     console.log(ev)
