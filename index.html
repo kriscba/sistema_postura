@@ -111,8 +111,6 @@
                 <div class="my-3">
                     <a class="fw-bold" href="#imagens"><button type="button" class="btn btn-dark">Imagens</button></a>
                     <a class="fw-bold" href="#evolucoes"><button type="button" class="btn btn-dark">Evoluçoes</button></a>
-                    <a class="fw-bold" href="#obstaculos"><button type="button" class="btn btn-dark">Obstaculos</button></a>
-                    <a class="fw-bold" href="#entrada-podal"><button type="button" class="btn btn-dark">Entrada Podal</button></a>
                 </div>
                 <div class="form-floating mb-3">
                     <input type="text" name="date" id="date" class="form-control" placeholder="Data">
@@ -155,38 +153,9 @@
                 </div>
             </section>
 
-            <section id="imagens" class="pt-5">
-                <h3>IMAGENS</h3>
-                <div class="mt-3">
-                    <label for="formFile" class="form-label"><i class="fa-solid fa-image"></i> Adicionar Imagem</label>
-                    <input class="form-control" type="file" id="formFile">
-                </div>
-                <div class="row mt-5">
-                    <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_1.jpeg" alt="" style="width: 100%;"></div>
-                    <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_2.jpeg" alt="" style="width: 100%;"></div>
-                    <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_1.jpeg" alt="" style="width: 100%;"></div>
-                    <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_2.jpeg" alt="" style="width: 100%;"></div>
-                    <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_1.jpeg" alt="" style="width: 100%;"></div>
-                </div>
-            </section>
 
-            <section id="evolucoes" class="pt-5">
-                <h3>EVOLUÇOES</h3>
-                <table style="width: 100%;" class="table">
-                    <tr>
-                        <th>Fecha</th>
-                        <th>Descripcion</th>
-                    </tr>
-                    <tr>
-                        <td>12/12/1212</td>
-                        <td>Vino hoy y se quejo</td>
-                    </tr>
-                    <tr>
-                        <td>12/12/1212</td>
-                        <td>Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo </td>
-                    </tr>
-                </table>
-            </section>
+
+
 
 
             <section id="avaliacao-clinica" class="pt-5">
@@ -201,6 +170,39 @@
                 </div>
             </section>
 
+            <section id="cirurgias" class="pt-5">
+                <h3>CIRURGIAS</h3>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="d-flex align-items-center justify-content-start mt-3" style="gap:25px">
+                            <h6>Cicatriz Patológica</h6>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="cicatriz" value="0" id="cacatrizSim" checked="true" role="button">
+                                <label class="form-check-label" for="cacatrizSim" role="button">No</label>
+                            </div>
+                            <div class="form-check" role="button">
+                                <input class="form-check-input" type="radio" name="cicatriz" value="1" id="cacatrizNao" role="button">
+                                <label class="form-check-label" for="cacatrizNao" role="button">Si</label>
+                            </div>
+                        </div>
+                        <div class="form-floating" id="text_cicatriz_local">
+                            <input type="text" name="cicatriz_local" id="cicatriz_local" class="form-control" placeholder="Local">
+                            <label for="cicatriz_local">Local</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="cirurgias" class="pt-5">
+                <h3>MEDICAÇOES E SUPLEMENTOS EM USO</h3>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="form-floating">
+                            <input type="text" name="medicacoes" id="medicacoes" class="form-control" placeholder="Local">
+                            <label for="medicacoes">Medicaçoes</label>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="pt-5" id="sono">
                 <h3>SONO</h3>
                 <div class="row">
@@ -220,13 +222,13 @@
 
                         <div class="row mt-3">
                             <div class="col-6 col-md-4 mb-3">
-                                <div class="form-floating" id="text_cicatriz_local">
+                                <div class="form-floating" id="">
                                     <input type="text" name="sono_hora_inicio" id="sono_hora_inicio" class="form-control" placeholder="Hora Inicio">
                                     <label for="sono_hora_inicio">Hora Inicio</label>
                                 </div>
                             </div>
                             <div class="col-6 col-md-4 mb-3">
-                                <div class="form-floating" id="text_cicatriz_local">
+                                <div class="form-floating" id="">
                                     <input type="text" name="sono_hora_despertar" id="sono_hora_despertar" class="form-control" placeholder="Hora Despertar">
                                     <label for="sono_hora_despertar">Hora Despertar</label>
                                 </div>
@@ -316,150 +318,11 @@
                                     <label for="complaint">Fatores de PIORA dos Sintomas</label>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section id="obstaculos" class="pt-5">
-                <h3>OBSTACULOS</h3>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="d-flex align-items-center justify-content-start mt-3" style="gap:25px">
-                            <h6>Cicatriz Patológica</h6>
-                            <div class="form-check">
-                                <input class="form-check-input" type="radio" name="cicatriz" value="0" id="cacatrizSim" checked="true" role="button">
-                                <label class="form-check-label" for="cacatrizSim" role="button">No</label>
-                            </div>
-                            <div class="form-check" role="button">
-                                <input class="form-check-input" type="radio" name="cicatriz" value="1" id="cacatrizNao" role="button">
-                                <label class="form-check-label" for="cacatrizNao" role="button">Si</label>
-                            </div>
-                        </div>
-                        <div class="form-floating" id="text_cicatriz_local" style="display: none;">
-                            <input type="text" name="cicatriz_local" id="cicatriz_local" class="form-control" placeholder="Local">
-                            <label for="cicatriz_local">Local</label>
-                        </div>
-                        <div class="row">
-                            <div class="col-12">
-                                <h6 class="my-3">Estrela de dor</h6>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-3">
-                                <div class="card">
-                                    <div class="card-header bg-primary text-white">LOMBAR</div>
-                                    <div class="card-body">
-                                        <div class="row">
-
-                                            <div class="col-12">
-                                                <label for="lombar_extensao" class="card-subtitle">Extensão</label>
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_extensao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="lombar_flexao" class="card-subtitle">Flexão</label>
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                                <hr>
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="lombar_flexao" class="card-subtitle">Lateralidade</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <hr>
-
-                                                <label for="lombar_flexao" class="card-subtitle">Rotacão</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-3">
-                                <div class="card">
-                                    <div class="card-header bg-primary text-white">DORSAL</div>
-                                    <div class="card-body">
-                                        <div class="row">
-
-                                            <div class="col-12">
-                                                <label for="lombar_extensao" class="card-subtitle">Extensão</label>
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_extensao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="lombar_flexao" class="card-subtitle">Flexão</label>
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="lombar_flexao" class="card-subtitle">Lateralidade</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <label for="lombar_flexao" class="card-subtitle">Rotacão</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-12 col-lg-4 mb-3">
-                                <div class="card">
-                                    <div class="card-header bg-primary text-white">CERVICAL</div>
-                                    <div class="card-body">
-                                        <div class="row">
-
-                                            <div class="col-12">
-                                                <label for="lombar_extensao" class="card-subtitle">Extensão</label>
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_extensao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="lombar_flexao" class="card-subtitle">Flexão</label>
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="lombar_flexao" class="card-subtitle">Lateralidade</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <label for="lombar_flexao" class="card-subtitle">Rotacão</label>
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                            <div class="col-6">
-                                                <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
-                                            </div>
-                                        </div>
-                                    </div>
+                            <div class="col-12 col-md-12">
+                                <!-- <h6>Desarmónicos</h6> -->
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" name="alimentacao" id="alimentacao" placeholder="Alimentaçao"></textarea>
+                                    <label for="alimentacao">Alimentaçao</label>
                                 </div>
                             </div>
                         </div>
@@ -903,6 +766,126 @@
             <section class="pt-5">
                 <h3>AVALIAÇÃO POSTURAL (reavaliar com elementos)</h3>
                 <div class="row mt-5">
+                    <div class="col-12 col-lg-4 mb-3">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">LOMBAR</div>
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <label for="lombar_extensao" class="card-subtitle">Extensão</label>
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_extensao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="lombar_flexao" class="card-subtitle">Flexão</label>
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                        <hr>
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="lombar_flexao" class="card-subtitle">Lateralidade</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <hr>
+
+                                        <label for="lombar_flexao" class="card-subtitle">Rotacão</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">DORSAL</div>
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <label for="lombar_extensao" class="card-subtitle">Extensão</label>
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_extensao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="lombar_flexao" class="card-subtitle">Flexão</label>
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="lombar_flexao" class="card-subtitle">Lateralidade</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="lombar_flexao" class="card-subtitle">Rotacão</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-4 mb-3">
+                        <div class="card">
+                            <div class="card-header bg-primary text-white">CERVICAL</div>
+                            <div class="card-body">
+                                <div class="row">
+
+                                    <div class="col-12">
+                                        <label for="lombar_extensao" class="card-subtitle">Extensão</label>
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_extensao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="lombar_flexao" class="card-subtitle">Flexão</label>
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-12">
+                                        <label for="lombar_flexao" class="card-subtitle">Lateralidade</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-12">
+                                        <label for="lombar_flexao" class="card-subtitle">Rotacão</label>
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                    <div class="col-6">
+                                        <input type="range" class="form-range" min="1" max="3" value="1" name="lombar_flexao" id="lombar_extensao">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row mt-5">
                     <div class="col-12 col-md-4 mb-3">
                         <div class="card">
                             <div class="card-header bg-primary text-white">Plano Escapular</div>
@@ -1248,6 +1231,43 @@
                     </div>
                 </div>
             </section>
+
+            <section id="imagens" class="pt-5">
+                <h3>IMAGENS</h3>
+                <div class="form-floating mb-3">
+                    <textarea class="form-control" name="imagenes_descripcao" id="imagenes_descripcao" placeholder="Descripcion"></textarea>
+                    <label for="imagenes_descripcao">Descripcion</label>
+                </div>
+                <div class="mt-3">
+                    <label for="formFile" class="form-label"><i class="fa-solid fa-image"></i> Adicionar Imagem</label>
+                    <input class="form-control" type="file" id="formFile">
+                </div>
+                <div class="row mt-5">
+                    <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_1.jpeg" alt="" style="width: 100%;"></div>
+                    <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_2.jpeg" alt="" style="width: 100%;"></div>
+                    <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_1.jpeg" alt="" style="width: 100%;"></div>
+                    <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_2.jpeg" alt="" style="width: 100%;"></div>
+                    <div class="col-4 col-md-3 col-lg-2 mb-3"><img src="public/images/asd_1.jpeg" alt="" style="width: 100%;"></div>
+                </div>
+            </section>
+
+            <section id="evolucoes" class="pt-5">
+                <h3>EVOLUÇOES</h3>
+                <table style="width: 100%;" class="table">
+                    <tr>
+                        <th>Fecha</th>
+                        <th>Descripcion</th>
+                    </tr>
+                    <tr>
+                        <td>12/12/1212</td>
+                        <td>Vino hoy y se quejo</td>
+                    </tr>
+                    <tr>
+                        <td>12/12/1212</td>
+                        <td>Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo Vino hoy y se quejo de nuevo </td>
+                    </tr>
+                </table>
+            </section>
         </form>
     </div>
 
@@ -1296,13 +1316,13 @@
             $('#age').focus()
             return age;
         }
-        $("input[name='cicatriz']").on('change', function (e) {
-            if (e.target.value == 1) {
-                $('#text_cicatriz_local').toggle(300);
-            } else {
-                $('#text_cicatriz_local').toggle(300);
-            }
-        });
+        // $("input[name='cicatriz']").on('change', function (e) {
+        //     if (e.target.value == 1) {
+        //         $('#text_cicatriz_local').toggle(300);
+        //     } else {
+        //         $('#text_cicatriz_local').toggle(300);
+        //     }
+        // });
 
         // $('#flush-visceras').click(function(ev){
         //     console.log(ev)
